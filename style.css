@@ -1,0 +1,14 @@
+.container {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: orange;
+  color: white;
+}
+.container01 {
+  width: 1024px;
+  margin: 0 auto;
+  background-color: wheat;
+}
+.heading01 {
+  text-align: center;
+}

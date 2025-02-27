@@ -1,0 +1,7 @@
+    <h1>We are AJAX parctice</h1>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque
+      voluptatibus sequi rerum repudiandae, similique dolor dignissimos
+      molestiae minus voluptatum nam alias id aliquid, perspiciatis tenetur
+      voluptate dolore! Pariatur, magnam eligendi!
+    </p>
