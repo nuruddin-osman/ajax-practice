@@ -9,11 +9,92 @@ function loadData() {
   xhttp.send(); //request ti send korte hobe
 }
 
-//jQuery AJAX.......
-function loadData() {
-  $.get("text.txt", function (data) {
-    $(".container01").text(data); // ডাটা আসার পর সেটা দেখাবো
-  }).fail(function () {
-    console.log("Error loading data.");
+// $(document).ready(function () {
+//   function loadData() {
+//     get method 2 differant waye
+//     get(url, callbackfunction)
+//     $("#setVal").load("index.html", function (responseText, statusText, xhttp) {
+//       console.log(responseText);
+//       console.log(statusText);
+//     });
+//     $.get("index.html", function (data, status) {
+//       console.log(data, status);
+//     });
+//     post(url,data, callbackfunction)
+//     $.post(
+//       "process.php",
+//       {
+//         username: "Sumon",
+//         phone: "01509857437",
+//       },
+//       function (data, status) {
+//         console.log(data, status);
+//       }
+//     );
+//     $.ajax({
+//       url: "data.html",
+//       success: function (data) {
+//         $("#setVal").html(data);
+//         alert(data);
+//       },
+//     });
+//     $.ajax({
+//       url: "data.html",
+//       type: "get",
+//       async: false,
+//       success: function (data) {
+//         alert(data);
+//       },
+//     });
+//     $.ajax({
+//       url: "process.php",
+//       type: "post",
+//       data: {
+//         phone: "017465827934",
+//         username: "Naeem",
+//       },
+//       async: false,
+//       success: function (data) {
+//         alert(data);
+//       },
+//     });
+
+//     $("#setVal").load("text.txt");
+//   }
+// });
+
+// function loadData() {
+//   $("#setVal").load("text.txt");
+// }
+
+// $(document).ready(function () {
+//   $("button").click(function () {
+//     $("#setVal").load("text.txt");
+//   });
+// });
+
+// $(document).ready(function () {
+//   $("button").click(function () {
+//     $.get("text.txt", function (data, status) {
+//       $("#setVal").html(data);
+//     });
+//   });
+// });
+
+$(document).ready(function () {
+  $("button").click(function () {
+    $.post(
+      "process.php",
+      {
+        name: "Sumon",
+        phone: "4357983475",
+      },
+      function (data, status) {
+        console.log(status);
+
+        $("#setVal").html(data);
+      }
+    );
   });
-}
+});
+
